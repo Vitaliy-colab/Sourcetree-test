@@ -1,14 +1,14 @@
 ﻿#include <iostream>
 #include <conio.h>
-#include <string.h> 
+#include <string.h>
 #define n 2
-//koment
+// koment
 struct ATC
 {
 	char rahunok[20], last_name[20], name[20], adres[20], nomer[20];
 };
-
-void sorting(struct ATC* p)
+// new koment
+void sorting(struct ATC *p)
 {
 	for (int i = 0; i < n - 1; i++)
 	{
@@ -21,12 +21,11 @@ void sorting(struct ATC* p)
 				p[j] = temp;
 			}
 		}
-
 	}
 	std::cout << "\n";
 }
 
-void poshuk(struct ATC* p)
+void poshuk(struct ATC *p)
 {
 	int m = 0;
 	char nomer1[20];
@@ -39,12 +38,19 @@ void poshuk(struct ATC* p)
 		if (p[i].nomer[d] == nomer1[d])
 		{
 			std::cout << "Subscriber found\n";
-			std::cout << "Rahunok" << "\t\t" << "last name and name" << "\t" << "Adress" << "\t\t" << "Nomer\n";
+			std::cout << "Rahunok"
+								<< "\t\t"
+								<< "last name and name"
+								<< "\t"
+								<< "Adress"
+								<< "\t\t"
+								<< "Nomer\n";
 			std::cout << p[i].rahunok << "\t" << p[i].last_name << " " << p[i].name << "\t" << p[i].adres << "\t" << p[i].nomer << "\n";
 			m++;
 		}
 	}
-	if (m == 0) std::cout << "There is no such Subscriber\n";
+	if (m == 0)
+		std::cout << "There is no such Subscriber\n";
 }
 
 void main()
@@ -61,7 +67,13 @@ void main()
 	for (int i = 0; i < n; i++)
 	{
 		cout << "Subscriber nomer" << i + 1 << "\n";
-		cout << "Rahunok" << "\t\t" << "last name and name" << "\t" << "Adress" << "\t\t" << "Nomer\n";
+		cout << "Rahunok"
+				 << "\t\t"
+				 << "last name and name"
+				 << "\t"
+				 << "Adress"
+				 << "\t\t"
+				 << "Nomer\n";
 		cout << a[i].rahunok << "\t" << a[i].last_name << " " << a[i].name << "\t" << a[i].adres << "\t" << a[i].nomer << "\n";
 	}
 	cout << "\n";
