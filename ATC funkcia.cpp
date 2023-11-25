@@ -7,7 +7,7 @@ struct ATC
 {
 	char rahunok[20], last_name[20], name[20], adres[20], nomer[20];
 };
-// new koment
+// new koment1
 void sorting(struct ATC *p)
 {
 	for (int i = 0; i < n - 1; i++)
