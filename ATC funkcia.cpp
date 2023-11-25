@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 #include <conio.h>
-#include <string.h>
+#include <string.h> 
 #define n 2
-
+//koment
 struct ATC
 {
 	char rahunok[20], last_name[20], name[20], adres[20], nomer[20];
